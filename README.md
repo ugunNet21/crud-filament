@@ -29,6 +29,62 @@ You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Install
+
+
+```bash
+
+composer require filament/filament
+php artisan filament:install --panels
+php artisan migrate
+php artisan make:filament-user
+
+```
+
+```bash
+
+php artisan serve
+
+http://localhost/admin/login
+
+```
+
+## buat mode
+
+```bash
+php artisan make:model Post -m
+php artisan migrate
+php artisan make:filament-resource Post
+
+```
+
+```bash
+PS D:\web\crud-filament> php artisan make:filament-user
+
+  Name:
+❯ ugun
+
+  Email address:
+❯ ugun@gmail.com
+
+  Password:
+❯
+
+   INFO  Success! ugun@gmail.com may now log in at http://localhost/admin/login.PS D:\web\crud-filament> php artisan make:filament-user
+
+  Name:
+❯ ugun
+
+  Email address:
+❯ ugun@gmail.com
+
+  Password:
+❯
+
+   INFO  Success! ugun@gmail.com may now log in at http://localhost/admin/login.
+   
+```
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
